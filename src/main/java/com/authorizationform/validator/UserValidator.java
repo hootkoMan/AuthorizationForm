@@ -3,6 +3,7 @@ package com.authorizationform.validator;
 import com.authorizationform.model.User;
 import com.authorizationform.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.validation.Errors;
 import org.springframework.validation.ValidationUtils;
 import org.springframework.validation.Validator;
@@ -10,6 +11,7 @@ import org.springframework.validation.Validator;
 /**
  * Created by ruslan on 31.03.17.
  */
+@Component
 public class UserValidator implements Validator {
 
     @Autowired
